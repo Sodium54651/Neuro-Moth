@@ -1,5 +1,5 @@
 import numpy as np
-
+import torch as th
 # ns = NeuroStuff
 class NeuroStuff:
 
@@ -98,6 +98,10 @@ print()
 
 
 # проверка 
+print("====================")
+print("  Тестовые данные   ")
+print("====================")
+
 Data = np.array([
     [2, 5]
 ])
@@ -106,4 +110,9 @@ Answers = np.array([
     [2]
 ])
 print(ns.Start(Data))
+
+print("\n====================")
+print("       Ответы       ")
+print("====================")
+print(Answers)
 
